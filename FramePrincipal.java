@@ -16,8 +16,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Font;
 
 public class FramePrincipal extends JFrame {
-	//modificacion :)
-	//modificacion de annie
+	
 	// Datos mínimos del primer colchón
 	public static String marca0 = "Suavestar";
 	public static double precio0 = 499.0;
@@ -87,6 +86,8 @@ public class FramePrincipal extends JFrame {
 	 * Create the frame.
 	 */
 	public FramePrincipal() {
+		setBackground(Color.WHITE);
+		setForeground(Color.WHITE);
 		setTitle("Tienda 1.0");
 		setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -97,6 +98,8 @@ public class FramePrincipal extends JFrame {
 		
 		/*Creacion de la barra de menu*/
 		JMenuBar menuBar = new JMenuBar();
+		menuBar.setForeground(Color.WHITE);
+		menuBar.setBackground(Color.WHITE);
 		setJMenuBar(menuBar);
 		
 		/*Elementos menu*/
@@ -113,31 +116,44 @@ public class FramePrincipal extends JFrame {
 		mnConfiguracion.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		menuBar.add(mnConfiguracion);
 		JMenu mnAyuda = new JMenu("Ayuda");
+		mnAyuda.setBackground(Color.WHITE);
 		mnAyuda.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		menuBar.add(mnAyuda);
 		
 		/*Items de mnArchivo*/
 		JMenuItem mntmSalir = new JMenuItem("Salir");
+		mntmSalir.setForeground(Color.RED);
+		mntmSalir.setBackground(Color.WHITE);
 		mntmSalir.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnArchivo.add(mntmSalir);
 		
 		/*Items de mnMantenimiento*/
 		JMenuItem mntmConsultarColchn = new JMenuItem("Consultar Colch\u00F3n");
+		mntmConsultarColchn.setForeground(Color.RED);
+		mntmConsultarColchn.setBackground(Color.WHITE);
 		mntmConsultarColchn.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnMantenimiento.add(mntmConsultarColchn);
 		JMenuItem mntmModificarColchon = new JMenuItem("Modificar colch\u00F3n");
+		mntmModificarColchon.setForeground(Color.RED);
+		mntmModificarColchon.setBackground(Color.WHITE);
 		mntmModificarColchon.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnMantenimiento.add(mntmModificarColchon);
 		JMenuItem mntmListarColchones = new JMenuItem("Listar colchones");
+		mntmListarColchones.setForeground(Color.RED);
+		mntmListarColchones.setBackground(Color.WHITE);
 		mntmListarColchones.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnMantenimiento.add(mntmListarColchones);
 		
 		
 		/*Items de mnVentas*/
 		JMenuItem mntmVender = new JMenuItem("Vender");
+		mntmVender.setForeground(Color.RED);
+		mntmVender.setBackground(Color.WHITE);
 		mntmVender.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnVentas.add(mntmVender);
 		JMenuItem mntmGenerarReportes = new JMenuItem("Generar reportes");
+		mntmGenerarReportes.setForeground(Color.RED);
+		mntmGenerarReportes.setBackground(Color.WHITE);
 		mntmGenerarReportes.setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
 		mnVentas.add(mntmGenerarReportes);
 		
@@ -145,24 +161,35 @@ public class FramePrincipal extends JFrame {
 		 * Items de mnConfiguracion
 		 */
 		JMenuItem mntmDescuentos = new JMenuItem("Configurar descuentos");
+		mntmDescuentos.setForeground(Color.RED);
+		mntmDescuentos.setBackground(Color.WHITE);
 		mntmDescuentos.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		mnConfiguracion.add(mntmDescuentos);
 		JMenuItem mntmObsequio = new JMenuItem("Configurar obsequio");
+		mntmObsequio.setForeground(Color.RED);
+		mntmObsequio.setBackground(Color.WHITE);
 		mntmObsequio.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		mnConfiguracion.add(mntmObsequio);
 		JMenuItem mntmCantidadptima = new JMenuItem("Configurar cantidad \u00F3ptima de colchones vendidos");
+		mntmCantidadptima.setForeground(Color.RED);
+		mntmCantidadptima.setBackground(Color.WHITE);
 		mntmCantidadptima.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		mnConfiguracion.add(mntmCantidadptima);
 		JMenuItem mntmPremioSorpresa = new JMenuItem("Configurar premio sorpresa");
+		mntmPremioSorpresa.setForeground(Color.RED);
+		mntmPremioSorpresa.setBackground(Color.WHITE);
 		mntmPremioSorpresa.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		mnConfiguracion.add(mntmPremioSorpresa);
 		
 		/*Items de mnAyuda*/
 		JMenuItem mntmAcercaDeTienda = new JMenuItem("Acerca de Tienda");
+		mntmAcercaDeTienda.setForeground(Color.RED);
+		mntmAcercaDeTienda.setBackground(Color.WHITE);
 		mntmAcercaDeTienda.setFont(new Font("Microsoft JhengHei", Font.PLAIN, 12));
 		mnAyuda.add(mntmAcercaDeTienda);
 		
 		contentPane = new JPanel();
+		contentPane.setBackground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
@@ -257,3 +284,4 @@ public class FramePrincipal extends JFrame {
 	}
 
 }
+
