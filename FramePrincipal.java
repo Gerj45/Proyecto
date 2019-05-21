@@ -17,6 +17,7 @@ import java.awt.Font;
 
 public class FramePrincipal extends JFrame {
 	//modificacion :)
+	//modificacion de annie
 	// Datos mínimos del primer colchón
 	public static String marca0 = "Suavestar";
 	public static double precio0 = 499.0;
