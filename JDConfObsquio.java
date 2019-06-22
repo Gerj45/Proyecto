@@ -81,8 +81,7 @@ public class JDConfObsquio extends JDialog {
 		
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				FramePrincipal.cantidadMinimaObsequiable = Integer.parseInt(txtCantM.getText());
-				FramePrincipal.obsequio = txtObs.getText();
+				procesar();
 			}
 		});
 		
@@ -92,5 +91,8 @@ public class JDConfObsquio extends JDialog {
 			}
 		});
 	}
-
+       void procesar(){
+    	   FramePrincipal.cantidadMinimaObsequiable = Integer.parseInt(txtCantM.getText());
+			FramePrincipal.obsequio = txtObs.getText();
+       }
 }
