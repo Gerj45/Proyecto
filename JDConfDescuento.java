@@ -40,6 +40,7 @@ public class JDConfDescuento extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
+	
 	public JDConfDescuento() {
 		setTitle("Configurar porcentajes de descuentos");
 		setFont(new Font("Microsoft YaHei", Font.PLAIN, 12));
@@ -124,14 +125,7 @@ public class JDConfDescuento extends JDialog {
 		
 		btnAceptar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				FramePrincipal.porcentaje1 = Double.parseDouble(txtDesc1.getText());
-				FramePrincipal.porcentaje2 = Double.parseDouble(txtDesc2.getText());
-				FramePrincipal.porcentaje3 = Double.parseDouble(txtDesc3.getText());
-				FramePrincipal.porcentaje4 = Double.parseDouble(txtDesc4.getText());
-				txtDesc1.setText(""+FramePrincipal.porcentaje1); 
-				txtDesc2.setText(""+FramePrincipal.porcentaje2); 
-				txtDesc3.setText(""+FramePrincipal.porcentaje3); 
-				txtDesc4.setText(""+FramePrincipal.porcentaje4);
+				procesar();
 			}
 		});
 		
@@ -143,4 +137,14 @@ public class JDConfDescuento extends JDialog {
 		
 	}
 
+	void procesar() {
+		FramePrincipal.porcentaje1 = Double.parseDouble(txtDesc1.getText());
+		FramePrincipal.porcentaje2 = Double.parseDouble(txtDesc2.getText());
+		FramePrincipal.porcentaje3 = Double.parseDouble(txtDesc3.getText());
+		FramePrincipal.porcentaje4 = Double.parseDouble(txtDesc4.getText());
+		txtDesc1.setText(""+FramePrincipal.porcentaje1); 
+		txtDesc2.setText(""+FramePrincipal.porcentaje2); 
+		txtDesc3.setText(""+FramePrincipal.porcentaje3); 
+		txtDesc4.setText(""+FramePrincipal.porcentaje4);
+	}
 }
